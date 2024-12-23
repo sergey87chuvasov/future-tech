@@ -409,4 +409,30 @@ button[aria-label]::before {
   content: "";
 }
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+.icon::after {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  content: "";
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon--yellow-arrow::after {
+  background-image: url("../../icons/arrow-top-right_yellow.svg");
+}
+
+.header__promo {
+  padding-block: 1.25rem;
+  text-align: center;
+  background-color: var(--color-dark);
+  border-bottom: var(--border);
+}
+
 /*# sourceMappingURL=main.css.map */
